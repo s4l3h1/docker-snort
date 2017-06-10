@@ -48,7 +48,7 @@ cp -fv pulledpork.pl /usr/local/bin ;\
 chmod +x /usr/local/bin/pulledpork.pl ;\
 cp -fv etc/*.conf /etc/snort ;\
 /usr/local/bin/pulledpork.pl -V ;\
-snort -T -c /etc/snort/snort.conf -i eth0 ;\
+snort -T -c /etc/snort/snort.conf -i eth0 
 ADD pulledpork.conf /etc/snort/pulledpork.conf
 RUN /usr/local/bin/pulledpork.pl -c /etc/snort/pulledpork.conf -l
 ADD cron /tmp/

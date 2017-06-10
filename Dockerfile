@@ -38,7 +38,7 @@ chmod -R 5775 /etc/snort/so_rules ;\
 chmod -R 5775 /usr/local/lib/snort_dynamicrules ;\
 chown -R snort:snort /etc/snort ;\
 chown -R snort:snort /var/log/snort ;\
-chown -R snort:snort /usr/local/lib/snort_dynamicrules 
+chown -R snort:snort /usr/local/lib/snort_dynamicrules ;\
 cp -fv /opt/snort_src/snort-2.9.9.0/etc/{*.map,*.dtd,*.conf*} /etc/snort ;\
 cp -rfv /opt/snort_src/snort-2.9.9.0/src/dynamic-preprocessors/build/usr/local/lib/snort_dynamicpreprocessor /usr/local/lib/ ;\
 wget https://github.com/shirkdog/pulledpork/archive/master.tar.gz -O pulledpork-master.tar.gz ;\
